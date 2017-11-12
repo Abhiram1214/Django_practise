@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Forms </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <form method="POST">
+          {{form.as_p}}
+          {% csrf_token%}
+        <input type="submit" class="btn btn-primary" name="" value="submit">
+      </form>
+    </div>
+  </body>
+</html>
